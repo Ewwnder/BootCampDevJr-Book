@@ -1,0 +1,23 @@
+<app-book [book]="newBook"></app-book>
+
+<div class="container">
+    <h3>Livros Cadastrados</h3>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Título</th>
+                <th>Autor</th>
+                <th>Preço</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let book of books">
+                <th>{{book.id}}</th>
+                <th>{{book.title}}</th>
+                <th>{{book.author}}</th>
+                <th>{{book.price}}</th>
+            </tr>
+        </tbody>
+    </table>
+</div>
